@@ -10,7 +10,7 @@ Generate static metamodel classes from cassandra driver annotations which allows
     <source>1.8</source>
     <target>1.8</target>
     <annotationProcessors>
-      <annotationProcessor>com.laci009.cassandra.modelgen.CassandraModelProcessor</annotationProcessor>
+      <annotationProcessor>com.github.laci009.cassandra.modelgen.CassandraModelProcessor</annotationProcessor>
     </annotationProcessors>
   </configuration>
 </plugin>

@@ -1,6 +1,6 @@
-package com.laci009.cassandra.modelgen;
+package com.github.laci009.cassandra.modelgen;
 
-import com.laci009.cassandra.modelgen.context.ElementContext;
+import com.github.laci009.cassandra.modelgen.context.ElementContext;
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;

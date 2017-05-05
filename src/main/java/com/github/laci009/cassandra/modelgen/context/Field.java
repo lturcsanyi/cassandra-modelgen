@@ -1,4 +1,4 @@
-package com.laci009.cassandra.modelgen.context;
+package com.github.laci009.cassandra.modelgen.context;
 
 /**
  * Created by laci009 on 2017.05.02.

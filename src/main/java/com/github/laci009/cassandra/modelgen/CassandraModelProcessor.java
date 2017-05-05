@@ -1,9 +1,9 @@
-package com.laci009.cassandra.modelgen;
+package com.github.laci009.cassandra.modelgen;
 
 import com.datastax.driver.mapping.annotations.Column;
 import com.datastax.driver.mapping.annotations.Table;
-import com.laci009.cassandra.modelgen.context.ElementContext;
-import com.laci009.cassandra.modelgen.context.Field;
+import com.github.laci009.cassandra.modelgen.context.ElementContext;
+import com.github.laci009.cassandra.modelgen.context.Field;
 import org.apache.commons.lang.StringUtils;
 
 import javax.annotation.processing.AbstractProcessor;

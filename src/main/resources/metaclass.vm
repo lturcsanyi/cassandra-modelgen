@@ -2,7 +2,7 @@ package ${packageName};
 
 import javax.annotation.Generated;
 
-@Generated("com.laci009.cassandra.modelgen.CassandraModelProcessor")
+@Generated("com.github.laci009.cassandra.modelgen.CassandraModelProcessor")
 public final class ${className}_ {
 
 	private ${className}_() {}

@@ -1,4 +1,4 @@
-package com.laci009.cassandra.modelgen.context;
+package com.github.laci009.cassandra.modelgen.context;
 
 import java.util.List;
 import java.util.Optional;
