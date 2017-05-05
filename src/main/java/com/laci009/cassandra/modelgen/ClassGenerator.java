@@ -32,22 +32,26 @@ public class ClassGenerator {
         this.processingEnv = processingEnv;
     }
 
-    public void generateMetadataClasses() {
+    public void generateMetadataClass() {
         try {
-            VelocityEngine velocityEngine = initVelocityEngine();
-            VelocityContext context = initVelocityContext(elementContext);
-
-            Template template = velocityEngine.getTemplate(TEMPLATE_FILE);
-            JavaFileObject javaFileObject = processingEnv.getFiler().createSourceFile(elementContext.getQualifiedName());
-            processingEnv.getMessager().printMessage(Kind.NOTE, "Creating source file: " + javaFileObject.toUri());
-
-            Writer writer = javaFileObject.openWriter();
-            processingEnv.getMessager().printMessage(Kind.NOTE, "Applying velocity template: " + template.getName());
-            template.merge(context, writer);
-            writer.close();
+            generateClass();
         } catch (ResourceNotFoundException | ParseErrorException | IOException e) {
             processingEnv.getMessager().printMessage(Kind.ERROR, e.getLocalizedMessage());
         }
+    }
+
+    private void generateClass() throws IOException {
+        VelocityEngine velocityEngine = initVelocityEngine();
+        VelocityContext context = initVelocityContext(elementContext);
+
+        Template template = velocityEngine.getTemplate(TEMPLATE_FILE);
+        JavaFileObject javaFileObject = processingEnv.getFiler().createSourceFile(elementContext.getQualifiedName());
+        processingEnv.getMessager().printMessage(Kind.NOTE, "Creating source file: " + javaFileObject.toUri());
+
+        Writer writer = javaFileObject.openWriter();
+        processingEnv.getMessager().printMessage(Kind.NOTE, "Applying velocity template: " + template.getName());
+        template.merge(context, writer);
+        writer.close();
     }
 
     private VelocityEngine initVelocityEngine() throws IOException {

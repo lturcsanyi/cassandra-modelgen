@@ -75,7 +75,7 @@ public class CassandraModelProcessor extends AbstractProcessor {
         final ElementContext elementContext = initElementContext(classElement);
 
         ClassGenerator classGenerator = new ClassGenerator(elementContext, processingEnv);
-        classGenerator.generateMetadataClasses();
+        classGenerator.generateMetadataClass();
     }
 
     private boolean isClass(Element element) {
