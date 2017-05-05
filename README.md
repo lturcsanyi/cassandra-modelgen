@@ -3,15 +3,6 @@ Generate static metamodel classes from cassandra driver annotations which allows
 
 ## Usage
 ```xml
-<dependency>
-  <groupId>com.laci009</groupId>
-  <artifactId>cassandra-modelgen</artifactId>
-  <version>1.0.0</version>
-  <scope>provided</scope>
-</dependency>
-
-...
-
 <plugin>
   <artifactId>maven-compiler-plugin</artifactId>
   <version>${maven-compiler-plugin.version}</version>
