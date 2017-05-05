@@ -1,0 +1,18 @@
+package ${packageName};
+
+import javax.annotation.Generated;
+
+@Generated("com.laci009.cassandra.modelgen.CassandraModelProcessor")
+public final class ${className}_ {
+
+	private ${className}_() {}
+
+#if( "$!tableName" != "" )
+	public static final String _table = "${tableName}";
+#end
+
+#foreach($field in $fields)
+	public static final String $field.name = "${field.value}";
+#end
+
+}
