@@ -14,5 +14,11 @@ Generate static metamodel classes from cassandra driver annotations which allows
     </annotationProcessors>
   </configuration>
 </plugin>
+...
+<dependency>
+  <groupId>com.github.laci009</groupId>
+  <artifactId>cassandra-modelgen</artifactId>
+  <version>1.0.0</version>
+</dependency>
 
 ```
