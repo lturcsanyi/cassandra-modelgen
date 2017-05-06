@@ -179,6 +179,5 @@
         <connection>scm:git:git://github.com/laci009/cassandra-modelgen.git</connection>
         <developerConnection>scm:git:ssh://github.com:laci009/cassandra-modelgen.git</developerConnection>
         <url>http://github.com/laci009/cassandra-modelgen/tree/master</url>
-      <tag>cassandra-modelgen-1.0.0</tag>
   </scm>
 </project>
