@@ -4,7 +4,7 @@
 
     <groupId>com.github.laci009</groupId>
     <artifactId>cassandra-modelgen</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>cassandra-modelgen</name>
@@ -179,5 +179,6 @@
         <connection>scm:git:git://github.com/laci009/cassandra-modelgen.git</connection>
         <developerConnection>scm:git:ssh://github.com:laci009/cassandra-modelgen.git</developerConnection>
         <url>http://github.com/laci009/cassandra-modelgen/tree/master</url>
-    </scm>
+      <tag>cassandra-modelgen-1.0.0</tag>
+  </scm>
 </project>
