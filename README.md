@@ -22,3 +22,11 @@ Generate static metamodel classes from cassandra driver annotations which allows
 </dependency>
 
 ```
+
+After compile you can use generated metamodel classes with _ postfix to create queries.
+In @Accessor annotated class:
+```java
+    @Query("SELECT * FROM " + UserData_._table + " " +
+    "WHERE " + UserDat_.userId + " = :userId")
+    Result<UserData> findUserById(String userId);
+```
